@@ -1,0 +1,50 @@
+/**** HEADER ****/
+.header {
+  background-image: linear-gradient(to right, rgb(0 0 0/0.8), rgb(0 0 0/0.7)),
+    url(/img/header.jpg);
+  padding: 6rem 0;
+  background-size: cover;
+  background-position: center center;
+}
+.logo {
+  width: 25rem;
+}
+.barra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .barra {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.navegacion {
+  display: flex;
+  gap: 2rem;
+  margin-top: 5rem;
+  align-items: center;
+}
+.navegacion a {
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  transition-property: background-color;
+  transition-duration: 300ms;
+}
+@media (min-width: 768px) {
+  .navegacion {
+    margin-top: 0;
+  }
+}
+.navegacion a:hover,
+.active {
+  background-color: var(--primary);
+}
+.navegacion img {
+  width: 3rem;
+}
