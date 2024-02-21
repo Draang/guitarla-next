@@ -1,7 +1,7 @@
 :root {
   --primary: #e99401;
   --black: #262626;
-  --white: #FFF;
+  --white: #fff;
   --fuente-principal: "Rubik", sans-serif;
 }
 html {
@@ -9,7 +9,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -22,7 +24,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-[class*="contenedor"], 
+[class*="contenedor"],
 main {
   width: min(95%, 120rem);
   margin: 3rem auto;
@@ -33,4 +35,36 @@ main {
   font-weight: 700;
   color: var(--primary);
   margin: 5rem 0;
+}
+
+[class*="enlace"] {
+  margin-top: 2rem;
+  display: block;
+  background-color: var(--black);
+  color: var(--white);
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+[class*="enlace"]:hover {
+  background-color: var(--primary);
+  box-shadow: 0px 15px 20px rgba(198, 125, 0, 0.4);
+  color: #fff;
+  transform: translateY(-4px);
+}
+[class*="error"],
+[class*="error-enlace"] {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+[class*="error-enlace"] {
+  display: block;
 }

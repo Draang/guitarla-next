@@ -42,6 +42,17 @@ export default function Header() {
           >
             Blog
           </Link>
+          <Link
+            href="/carrito"
+            className={router.pathname === "/carrito" ? styles.active : ""}
+          >
+            <Image
+              src={"/img/carrito.png"}
+              alt="carrito"
+              width={300}
+              height={300}
+            />
+          </Link>
         </nav>
       </div>
     </header>
